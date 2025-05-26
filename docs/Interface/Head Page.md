@@ -1,0 +1,60 @@
+This page asks for a password to authenticate if the person is actually is Head and have admin rights. 
+
+> Password is currently set to `123`. 
+
+### Changing the Password
+Password can be changed by two ways: 
+1. (**Recommended**) Changing the environment variable `head_password` from the `.env`.
+2. By directly changing the `correct password` variable in the `pages/Head.py`.
+
+## Usage
+By entering the correct password, admin will get access to the admin options.
+
+### 1. Add slots from template
+This provides the admin to import one of the three : 
+1. Odd term Template
+2. Even term Template
+3. Summer term Template
+
+Admin should select one of these options depending on the current term.
+
+### 2. Export template slots
+This provides admin the functionality to export the template of odd/even/summer terms in a `.csv` file, which can be downloaded.
+
+### 3. Add slot individually
+This gives the admin option, to add slots in a template manually. To add a slot manually : 
+1. Enter the slot name (eg. OE1, OE2 etc.).
+2. Check the checkboxes corresponding to the days on which the course have classes, and then enter the start time and the end time in 24 hr `HH:MM` format for each day.
+3. Click Submit.
+
+### 4. Display slot
+This allows the admin to see all the slots including the ones imported by default from the term template(odd/even/summer) and also those which are added manually(using `Add slot individually` option).
+
+Admin **can also remove** a slot, if anything is incorrect.
+
+### 5. Display courses
+This shows all the courses offered by the department currently. It shows `course code`, `course name` and gives the admin option to **remove a course** if something is wrong. These courses are imported from the term template. 
+
+If admin wants to add a new course, which is not present by default in the template, then they may use the `Add courses` option.
+
+### 6. Add courses.
+Allows the admin to add a course manually, the admin has to enter the **course code** (**Caution**: This is Case Sensitive). If the course is present in the database, then it would get added to the courses offered list, and can be seen from the Display courses option.
+
+### 7. Export Preferences 
+Allows admin to download the preferences filled by all the professors in a csv file. 
+The CSV File has the following structure:
+
+| Courses             | Avoid Clash | Slot Preferences |
+| :------:| :------: | :------: |
+| CS425|   [list of courses to avoid clash of CS425 with]   | [list of preferred slots for CS425] |
+| ...          |   ...  | ... |
+| ...    |  ...  | ... |
+
+### 8. Generate Timetable Button
+Admin can click on `Generate Timetable button` to generate timetable. In a second, if there exists a valid scheduling, then a csv file will be generated and can be downloaded by the Admin.
+
+### 9. Stop Execution Button
+If for some reason, the scheduler is taking a lot of time to generate the timetable, then it can be stopped using the `Stop Execution Page`.
+
+### 10. Refresh Data
+This gives admin to reset all the preferences filled by the admin.
