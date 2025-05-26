@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktime_table_scheduler=self.webpackChunktime_table_scheduler||[]).push([[903],{1912:e=>{e.exports=JSON.parse('{"blogBasePath":"/Time_Table_Scheduler/blog","blogTitle":"Blog","authorsListPath":"/Time_Table_Scheduler/blog/authors"}')}}]);

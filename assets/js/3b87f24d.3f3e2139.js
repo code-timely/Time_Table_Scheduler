@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktime_table_scheduler=self.webpackChunktime_table_scheduler||[]).push([[507],{2720:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/Time_Table_Scheduler/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
