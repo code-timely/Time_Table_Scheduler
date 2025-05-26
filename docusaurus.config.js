@@ -16,14 +16,17 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://code-timely.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/Time_Table_Scheduler/',
+  trailingSlash: false,
+  deploymentBranch: 'gh-pages',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Pclub', // Usually your GitHub org/user name.
+  // organizationName: 'Pclub', // Usually your GitHub org/user name.
+  organizationName: 'code-timely',
   projectName: 'Time_Table_Scheduler', // Usually your repo name.
 
   onBrokenLinks: 'throw',

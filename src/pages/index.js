@@ -20,7 +20,8 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Apni Documentation 
+              Head over the Docs
+              P.S This is a work in progress
           </Link>
         </div>
       </div>
